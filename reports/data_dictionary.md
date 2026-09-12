@@ -1,11 +1,11 @@
-# 📖 Data Dictionary — Customer Churn & Decision Intelligence System
+# Data Dictionary — Customer Churn & Decision Intelligence System
 
-## 📋 Overview
+## Overview
 This Data Dictionary defines every feature within the **Predictive Customer Churn & Retention Decision System**. It maps technical column names, data types, business definitions, and operational roles in our 4-Level Decision Framework.
 
 ---
 
-## 🗂️ Raw Dataset Features (`data/raw/customer_churn.csv`)
+## ️ Raw Dataset Features (`data/raw/customer_churn.csv`)
 
 | Variable Name | Data Type | Role / Category | Business Meaning & Operational Context |
 | :--- | :--- | :--- | :--- |
@@ -34,7 +34,7 @@ This Data Dictionary defines every feature within the **Predictive Customer Chur
 
 ---
 
-## 🛠️ Engineered Domain Features (`src/features/feature_builder.py`)
+## ️ Engineered Domain Features (`src/features/feature_builder.py`)
 
 | Feature Name | Data Type | Business Formula | Business Meaning & SHAP Driver Purpose |
 | :--- | :--- | :--- | :--- |

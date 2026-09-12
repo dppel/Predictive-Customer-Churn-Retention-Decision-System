@@ -1,12 +1,12 @@
 # Predictive Customer Churn & Retention Decision Intelligence System
 
-## 🏢 Business Scenario & Objective
+## Business Scenario & Objective
 
 A **subscription-based enterprise** (SaaS / Telecom model) seeks to reduce customer churn by identifying customers at high risk of leaving and prioritizing economically valuable retention interventions.
 
 ---
 
-## 🎯 The Primary Business Question Framework
+## The Primary Business Question Framework
 
 Rather than jumping straight into machine learning code, this system is anchored on the fundamental **Business Question**:
 
@@ -33,7 +33,7 @@ To answer this, our system structures the analytical and modeling workflow acros
 
 ---
 
-## 🚀 Key Results & Financial ROI
+## Key Results & Financial ROI
 
 ```
 ======================================================================
@@ -50,7 +50,7 @@ To answer this, our system structures the analytical and modeling workflow acros
 
 ---
 
-## 📁 Production Directory Architecture
+## Production Directory Architecture
 
 ```
 customer-churn-decision-intelligence/
@@ -87,7 +87,7 @@ customer-churn-decision-intelligence/
 
 ---
 
-## ⚡ How to Run
+## How to Run
 
 1. **Execute End-to-End Pipeline**:
    ```bash

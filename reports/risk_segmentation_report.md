@@ -1,22 +1,22 @@
-# 🚦 Customer Risk Segmentation & Threshold Engineering Report
+# Customer Risk Segmentation & Threshold Engineering Report
 
-## 📋 Executive Overview
+## Executive Overview
 This report documents the **4-Tier Customer Risk Segmentation** framework. Moving beyond simple binary outcomes (`Churn = 0 / 1`), our system categorizes customers into business-actionable risk tiers where **probability thresholds are derived directly from Business Cost economics**.
 
 ---
 
-## 🟢🟡🟠🔴 The 4 Business Risk Tiers
+## The 4 Business Risk Tiers
 
 | Risk Tier | Probability Range ($P$) | Business Interpretation | Operational Protocol & Action | Min Intervention Cost ($C_{\text{interv}}$) |
 | :--- | :--- | :--- | :--- | :--- |
-| 🟢 **Low Risk** | **$P < 30\%$** | Low churn risk | No intervention required; monitor passively. | **\$0.00** |
-| 🟡 **Medium Risk** | **$30\% \le P < 60\%$** | Moderate risk / Monitor | Targeted 15% Discount Voucher (3 months). | **\$35.00** |
-| 🟠 **High Risk** | **$60\% \le P < 80\%$** | High risk / Intervene | Free Service & Speed Upgrade. | **\$65.00** |
-| 🔴 **Critical Risk** | **$P \ge 80\%$** | Immediate churn threat | Priority retention with Dedicated VIP Concierge. | **\$150.00** |
+|  **Low Risk** | **$P < 30\%$** | Low churn risk | No intervention required; monitor passively. | **\$0.00** |
+|  **Medium Risk** | **$30\% \le P < 60\%$** | Moderate risk / Monitor | Targeted 15% Discount Voucher (3 months). | **\$35.00** |
+|  **High Risk** | **$60\% \le P < 80\%$** | High risk / Intervene | Free Service & Speed Upgrade. | **\$65.00** |
+|  **Critical Risk** | **$P \ge 80\%$** | Immediate churn threat | Priority retention with Dedicated VIP Concierge. | **\$150.00** |
 
 ---
 
-## 💰 How Thresholds are Derived from Business Cost
+## How Thresholds are Derived from Business Cost
 
 Rather than choosing arbitrary cutoff numbers (e.g. 50%), our probability boundaries ($30\%$, $60\%$, $80\%$) are mathematically grounded in the **Expected Value (EV)** break-even equation:
 
@@ -38,15 +38,15 @@ $$\text{Expected Net Gain} = P(\text{Churn}) \times P(\text{Acceptance}) \times 
 
 ---
 
-## 📊 Portfolio Risk Distribution (5,000 Customers)
+## Portfolio Risk Distribution (5,000 Customers)
 
 ```
 ┌─────────────────┬──────────────────────┬───────────────────────┐
 │ Risk Tier       │ Customer Count       │ Portfolio Fraction %  │
 ├─────────────────┼──────────────────────┼───────────────────────┤
-│ 🟢 Low Risk     │ 2,207 customers      │ 44.1%                 │
-│ 🟡 Medium Risk  │ 988 customers        │ 19.8%                 │
-│ 🟠 High Risk    │ 576 customers        │ 11.5%                 │
-│ 🔴 Critical Risk│ 1,229 customers      │ 24.6%                 │
+│  Low Risk     │ 2,207 customers      │ 44.1%                 │
+│  Medium Risk  │ 988 customers        │ 19.8%                 │
+│  High Risk    │ 576 customers        │ 11.5%                 │
+│  Critical Risk│ 1,229 customers      │ 24.6%                 │
 └─────────────────┴──────────────────────┴───────────────────────┘
 ```

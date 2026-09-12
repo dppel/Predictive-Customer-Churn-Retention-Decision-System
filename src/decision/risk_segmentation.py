@@ -12,10 +12,10 @@ from typing import Tuple
 def assign_risk_tier(prob: float) -> str:
     """
     Assigns Risk Tier based on business cost thresholds:
-    - 🟢 Low Risk (< 30%): Preserved value < intervention cost; no intervention.
-    - 🟡 Medium Risk (30% - 60%): Monitor & low-cost discount voucher.
-    - 🟠 High Risk (60% - 80%): Feature/speed upgrade intervention.
-    - 🔴 Critical Risk (>= 80%): Priority retention with dedicated VIP concierge.
+    -  Low Risk (< 30%): Preserved value < intervention cost; no intervention.
+    -  Medium Risk (30% - 60%): Monitor & low-cost discount voucher.
+    -  High Risk (60% - 80%): Feature/speed upgrade intervention.
+    -  Critical Risk (>= 80%): Priority retention with dedicated VIP concierge.
     """
     if prob < 0.30:
         return "Low Risk"

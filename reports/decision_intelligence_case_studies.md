@@ -1,14 +1,14 @@
-# 🧠 Decision Intelligence Case Studies — The Paradigm Shift
+# Decision Intelligence Case Studies — The Paradigm Shift
 
-## 📋 Executive Overview — From Predictive ML to Decision Intelligence
+## Executive Overview — From Predictive ML to Decision Intelligence
 
 Traditional Machine Learning asks a single narrow question:
 
-> ❌ **Traditional Machine Learning**: *"Who will churn?"*
+>  **Traditional Machine Learning**: *"Who will churn?"*
 
 Our Decision Intelligence System asks the true business question:
 
-> ✅ **Decision Intelligence System**: *"Who should we intervene on to maximize net financial profit?"*
+>  **Decision Intelligence System**: *"Who should we intervene on to maximize net financial profit?"*
 
 ---
 
@@ -27,14 +27,14 @@ To understand why traditional ML classification fails in production while Decisi
 │ • Expected Retention Benefit: €420    │ • Expected Retention Benefit: €28     │
 │ • Expected Net Gain:          +€370   │ • Expected Net Gain:          -€22    │
 ├───────────────────────────────────────┼───────────────────────────────────────┤
-│ 🟢 DECISION: RETENTION OFFER          │ 🔴 DECISION: NO INTERVENTION          │
+│  DECISION: RETENTION OFFER          │  DECISION: NO INTERVENTION          │
 │ (High Net ROI Intervention)           │ (Prevents Negative ROI Budget Waste)  │
 └───────────────────────────────────────┴───────────────────────────────────────┘
 ```
 
 ---
 
-## 🔍 Detailed Analysis of the Contrast
+## Detailed Analysis of the Contrast
 
 ### 1. What Traditional Machine Learning Does:
 - Both Customer A ($P=87\%$) and Customer B ($P=82\%$) are flagged as `Class 1 (Churn)`.
@@ -51,7 +51,7 @@ To understand why traditional ML classification fails in production while Decisi
 
 ---
 
-## 🏆 Key Takeaways for Portfolio & Executive Stakeholders
+## Key Takeaways for Portfolio & Executive Stakeholders
 
 1. **Risk $\neq$ Priority**: High churn risk alone does not justify marketing intervention spend unless the customer possesses sufficient Customer Lifetime Value (CLV).
 2. **Preventing Value Destruction**: Decision Intelligence prevents companies from spending \$50 retention vouchers on \$30/year accounts.

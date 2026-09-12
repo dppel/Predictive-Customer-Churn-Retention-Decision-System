@@ -1,11 +1,11 @@
-# 📊 Comprehensive Model Evaluation & Business Cost Tradeoff Report
+# Comprehensive Model Evaluation & Business Cost Tradeoff Report
 
-## 📋 Executive Overview
+## Executive Overview
 This report evaluates the **Calibrated XGBoost Classifier** across 7 diagnostic dimensions and connects statistical performance metrics directly to **Business Cost & Financial Risk**.
 
 ---
 
-## 🎯 The 7 Evaluation Dimensions
+## The 7 Evaluation Dimensions
 
 | Metric | Empirical Score | Business Interpretation |
 | :--- | :--- | :--- |
@@ -19,7 +19,7 @@ This report evaluates the **Calibrated XGBoost Classifier** across 7 diagnostic 
 
 ---
 
-## 🧩 Confusion Matrix Analysis (Test Dataset: 1,000 Customers)
+## Confusion Matrix Analysis (Test Dataset: 1,000 Customers)
 
 ```
                        PREDICTED
@@ -30,7 +30,7 @@ ACTUAL  Stayed (0)    501          99        (True Negatives = 501, False Positi
 
 ---
 
-## ⚖️ Business Cost & Asymmetric Risk Analysis
+## ️ Business Cost & Asymmetric Risk Analysis
 
 In customer churn decisioning, classification errors carry **highly asymmetric financial costs**:
 
@@ -44,7 +44,7 @@ In customer churn decisioning, classification errors carry **highly asymmetric f
 - **Financial Penalty**: The company wastes the retention intervention offer cost ($C_{\text{interv}}$).
 - **Average Loss per FP**: $\approx \$35.00 - \$65.00$.
 
-### 💡 Strategic Asymmetry Conclusion
+### Strategic Asymmetry Conclusion
 $$\text{Cost}(\text{False Negative}) \gg \text{Cost}(\text{False Positive})$$
 $$\$1,800.00 \gg \$50.00$$
 
@@ -52,7 +52,7 @@ Because losing a high-value customer is **36 times more expensive** than giving 
 
 ---
 
-## 📈 Probability Calibration (Sigmoid Calibration Curve)
+## Probability Calibration (Sigmoid Calibration Curve)
 
 Uncalibrated tree ensemble models often produce overconfident probability estimates near 0 or 1. By applying `CalibratedClassifierCV` (Sigmoid / Platt Scaling), our output probability $P(\text{Churn})$ maps linearly to true empirical churn frequency:
 

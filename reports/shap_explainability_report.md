@@ -1,6 +1,6 @@
-# 🔍 Explainable AI (XAI) Report: Global & Individual TreeSHAP Attributions
+# Explainable AI (XAI) Report: Global & Individual TreeSHAP Attributions
 
-## 📋 Executive Overview
+## Executive Overview
 This report documents the **Explainable AI (XAI)** capabilities of our system using **TreeSHAP (SHapley Additive exPlanations)**. 
 
 By integrating TreeSHAP with our Calibrated XGBoost model, we solve the classic machine learning black-box trade-off:
@@ -9,7 +9,7 @@ By integrating TreeSHAP with our Calibrated XGBoost model, we solve the classic 
 
 ---
 
-## 🌐 1. Global Explanation: Portfolio Churn Drivers
+## 1. Global Explanation: Portfolio Churn Drivers
 
 Across the entire 5,000 customer base, TreeSHAP identifies the top global churn drivers:
 
@@ -34,9 +34,9 @@ Across the entire 5,000 customer base, TreeSHAP identifies the top global churn 
 
 ---
 
-## 👤 2. Individual Explanations: Customer Case Studies
+## 2. Individual Explanations: Customer Case Studies
 
-### 📍 Case Study A: Customer #152 (`CUST-1152`)
+### Case Study A: Customer #152 (`CUST-1152`)
 - **Calibrated Churn Probability**: **87.2%**
 - **Risk Tier**: **Critical Risk**
 - **Customer Lifetime Value (CLV)**: **\$2,240.00**
@@ -61,7 +61,7 @@ Customer #152 is churning not because of service outages, but due to acute **sup
 
 ---
 
-### 📍 Case Study B: Customer #304 (`CUST-1304`)
+### Case Study B: Customer #304 (`CUST-1304`)
 - **Calibrated Churn Probability**: **18.4%**
 - **Risk Tier**: **Low Risk**
 - **Customer Lifetime Value (CLV)**: **\$1,890.00**

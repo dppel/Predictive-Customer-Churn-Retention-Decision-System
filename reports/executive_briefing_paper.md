@@ -1,4 +1,4 @@
-# 👔 Executive Briefing Paper: Predictive Customer Churn & Retention Decision System
+# Executive Briefing Paper: Predictive Customer Churn & Retention Decision System
 
 **Prepared for**: Chief Executive Officer (CEO) / Chief Operating Officer (COO) / Head of Customer Retention  
 **Prepared by**: Lead Decision Scientist / Senior Data Science Specialist  
@@ -7,7 +7,7 @@
 
 ---
 
-## 🎯 Executive Summary & Core Value Proposition
+## Executive Summary & Core Value Proposition
 
 Customer churn represents an annual loss of revenue across recurring subscription businesses. Traditional approaches suffer from two systemic flaws:
 1. **Passive Risk Reporting**: Models output churn probabilities without prescribing operational actions.
@@ -17,7 +17,7 @@ We have engineered and validated an enterprise-grade **Decision Intelligence & R
 
 ---
 
-## 📈 Key Financial Highlights & Business ROI
+## Key Financial Highlights & Business ROI
 
 Across a portfolio of **5,000 customer accounts**:
 
@@ -28,7 +28,7 @@ Across a portfolio of **5,000 customer accounts**:
 
 ---
 
-## 🏛️ The 4-Level Enterprise Decision Architecture
+## ️ The 4-Level Enterprise Decision Architecture
 
 ```
                  ┌──────────────────────────────────────┐
@@ -68,7 +68,7 @@ Across a portfolio of **5,000 customer accounts**:
 
 ---
 
-## ⚖️ Asymmetric Financial Risk Analysis
+## ️ Asymmetric Financial Risk Analysis
 
 Classification errors carry non-symmetrical financial consequences:
 
@@ -81,7 +81,7 @@ Because losing an account is **36 times more expensive** than an unnecessary dis
 
 ---
 
-## 🛡️ Enterprise Governance & Production Readiness
+## ️ Enterprise Governance & Production Readiness
 
 1. **Monte Carlo Sensitivity Analysis**: Tested across 1,000 simulated market stress runs (varying acceptance rates $\pm 15\%$ and costs $\pm 20\%$).
    - **95% Downside Value-at-Risk (VaR)**: Preserves **\$1,215,400+** in net profit even under severe market shocks.
@@ -90,7 +90,7 @@ Because losing an account is **36 times more expensive** than an unnecessary dis
 
 ---
 
-## 🗺️ Phased Rollout Implementation Roadmap
+## ️ Phased Rollout Implementation Roadmap
 
 - **Phase 1 (Month 1)**: Shadow deployment and data pipeline integration with CRM.
 - **Phase 2 (Month 2)**: Causal A/B test rollout on 2,500 High-Risk accounts.

@@ -20,17 +20,17 @@ from src.decision.sensitivity_analysis import run_monte_carlo_sensitivity
 from src.monitoring.drift_detector import monitor_feature_drift
 from src.decision.ab_testing_design import calculate_ab_sample_size
 
-# -----------------------------------------------------------------------------
-# Page Configuration & High-Contrast Professional Palette
-# -----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#Page Configuration & High-Contrast Professional Palette
+#-----------------------------------------------------------------------------
 st.set_page_config(
     page_title="Customer Retention & Revenue Protection Portal",
-    page_icon="⚡",
+    page_icon=None,
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Comprehensive High-Contrast CSS Theme Overrides
+#Comprehensive High-Contrast CSS Theme Overrides
 st.markdown("""
 <style>
     /* Main App Background & Typography */
@@ -217,9 +217,9 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# -----------------------------------------------------------------------------
-# Data & Model Pipeline Ingestion
-# -----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#Data & Model Pipeline Ingestion
+#-----------------------------------------------------------------------------
 @st.cache_data
 def load_decision_data():
     csv_path = "reports/customer_retention_decisions.csv"
@@ -241,9 +241,9 @@ def load_model_artifacts():
 df_decisions = load_decision_data()
 artifacts, preprocessor, explainer = load_model_artifacts()
 
-# -----------------------------------------------------------------------------
-# Header Component
-# -----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#Header Component
+#-----------------------------------------------------------------------------
 st.markdown("""
 <div class="top-header">
     <div>
@@ -256,9 +256,9 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# -----------------------------------------------------------------------------
-# Global Filter Toolbar
-# -----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#Global Filter Toolbar
+#-----------------------------------------------------------------------------
 st.sidebar.markdown("### Portfolio Filters")
 
 selected_risk = st.sidebar.multiselect(
@@ -281,7 +281,7 @@ selected_clv_range = st.sidebar.slider(
     value=(min_clv, max_clv)
 )
 
-# Apply global filters
+#Apply global filters
 filtered_df = df_decisions[
     (df_decisions['Risk_Tier'].isin(selected_risk)) &
     (df_decisions['ContractType'].isin(selected_contract)) &
@@ -303,7 +303,7 @@ page = st.sidebar.radio(
     label_visibility="collapsed"
 )
 
-# CRM Campaign Download Action in Sidebar
+#CRM Campaign Download Action in Sidebar
 st.sidebar.markdown("---")
 st.sidebar.markdown("### Export Campaign Audience")
 csv_data = filtered_df[filtered_df['Recommended_Action'] != "No Intervention"].to_csv(index=False).encode('utf-8')
@@ -315,7 +315,7 @@ st.sidebar.download_button(
     use_container_width=True
 )
 
-# High-Contrast Plotly Dark Theme
+#High-Contrast Plotly Dark Theme
 HIGH_CONTRAST_PLOTLY_THEME = dict(
     paper_bgcolor='rgba(0,0,0,0)',
     plot_bgcolor='rgba(0,0,0,0)',
@@ -324,9 +324,9 @@ HIGH_CONTRAST_PLOTLY_THEME = dict(
     yaxis=dict(gridcolor='#1E293B', zerolinecolor='#1E293B')
 )
 
-# -----------------------------------------------------------------------------
-# TAB 1: PORTFOLIO RETENTION OVERVIEW
-# -----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#TAB 1: PORTFOLIO RETENTION OVERVIEW
+#-----------------------------------------------------------------------------
 if page == "Portfolio Retention Overview":
     
     # Financial KPI Bar
@@ -537,9 +537,9 @@ if page == "Portfolio Retention Overview":
         )
         st.plotly_chart(fig_dist, use_container_width=True)
 
-# -----------------------------------------------------------------------------
-# TAB 2: ACCOUNT RISK DIAGNOSTICS & SHAP
-# -----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#TAB 2: ACCOUNT RISK DIAGNOSTICS & SHAP
+#-----------------------------------------------------------------------------
 elif page == "Account Risk Diagnostics":
     st.markdown("##### Account Risk Attribution & Root Cause Analysis")
     st.markdown("<span style='color:#8B949E; font-size:0.88rem;'>Deep-dive individual accounts to inspect underlying drivers of churn risk using TreeSHAP feature attributions.</span>", unsafe_allow_html=True)
@@ -595,9 +595,9 @@ elif page == "Account Risk Diagnostics":
     </div>
     """.format(account['CustomerID'], account['Recommended_Action'], account['Intervention_Cost'], account['Expected_Net_Gain']), unsafe_allow_html=True)
 
-# -----------------------------------------------------------------------------
-# TAB 3: TARGETING MATRIX & DIRECTORY
-# -----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#TAB 3: TARGETING MATRIX & DIRECTORY
+#-----------------------------------------------------------------------------
 elif page == "Targeting Matrix & Directory":
     st.markdown("##### Portfolio Targeting Density & Action Routing")
     st.markdown("<span style='color:#8B949E; font-size:0.88rem;'>2D segmentation matrix mapping Churn Risk Tiers against Customer Lifetime Value (CLV) Tiers.</span>", unsafe_allow_html=True)
@@ -629,9 +629,9 @@ elif page == "Targeting Matrix & Directory":
         height=380
     )
 
-# -----------------------------------------------------------------------------
-# TAB 4: RETENTION ECONOMICS SIMULATOR
-# -----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#TAB 4: RETENTION ECONOMICS SIMULATOR
+#-----------------------------------------------------------------------------
 elif page == "Retention Economics Simulator":
     st.markdown("##### Commercial Strategy & Unit Economics Simulator")
     st.markdown("<span style='color:#8B949E; font-size:0.88rem;'>Adjust offer costs and customer acceptance probabilities to simulate portfolio net profitability.</span>", unsafe_allow_html=True)
@@ -691,9 +691,9 @@ elif page == "Retention Economics Simulator":
         </div>
         """, unsafe_allow_html=True)
 
-# -----------------------------------------------------------------------------
-# TAB 5: GOVERNANCE & TRIAL SETUP
-# -----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#TAB 5: GOVERNANCE & TRIAL SETUP
+#-----------------------------------------------------------------------------
 elif page == "Governance & Trial Setup":
     st.markdown("##### Production Governance, Stress Testing & Experiment Design")
     st.markdown("<span style='color:#8B949E; font-size:0.88rem;'>Enterprise risk controls: Monte Carlo VaR simulation, Population Stability Index (PSI) drift monitoring, and A/B power calculations.</span>", unsafe_allow_html=True)

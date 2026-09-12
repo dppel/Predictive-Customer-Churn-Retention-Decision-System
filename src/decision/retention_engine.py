@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 from typing import Dict, List, Any
 
-# Retention Offer Catalog Definitions
+#Retention Offer Catalog Definitions
 RETENTION_CATALOG = {
     "NO_ACTION": {
         "name": "No Intervention",
