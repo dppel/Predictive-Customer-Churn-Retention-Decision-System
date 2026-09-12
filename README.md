@@ -2,10 +2,7 @@
 
 ## 🏢 Business Scenario & Objective
 
-A **subscription-based company** (SaaS / Telecom model) wants to reduce customer churn by identifying customers at high risk of leaving and prioritizing economically valuable retention interventions.
-
-### 📜 Professional & Academic Disclaimer
-> **Disclaimer:** *This project uses a high-fidelity simulated customer dataset and develops a synthetic business decision framework to demonstrate how predictive analytics and explainable AI can support customer retention decisions.*
+A **subscription-based enterprise** (SaaS / Telecom model) seeks to reduce customer churn by identifying customers at high risk of leaving and prioritizing economically valuable retention interventions.
 
 ---
 
@@ -63,7 +60,7 @@ customer-churn-decision-intelligence/
 │   └── processed/   # Cleaned, encoded, and engineered dataset features
 │
 ├── docs/
-│   └── business_understanding.md # Business scenario, disclaimer & 4-Level Framework
+│   └── business_understanding.md # Business scenario, context & 4-Level Framework
 │
 ├── notebooks/       # Exploratory analysis & experimental modeling notebooks
 │

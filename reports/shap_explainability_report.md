@@ -29,8 +29,8 @@ Across the entire 5,000 customer base, TreeSHAP identifies the top global churn 
 ```
 
 - **Global Plots Exported**:
-  - [figures/shap_summary_bar.png](file:///c:/Users/dppel/Desktop/Predictive%20Customer%20Churn%20&%20Retention%20Decision%20System/customer-churn-decision-intelligence/figures/shap_summary_bar.png)
-  - [figures/shap_summary_beeswarm.png](file:///c:/Users/dppel/Desktop/Predictive%20Customer%20Churn%20&%20Retention%20Decision%20System/customer-churn-decision-intelligence/figures/shap_summary_beeswarm.png)
+  - [figures/shap_summary_bar.png](../figures/shap_summary_bar.png)
+  - [figures/shap_summary_beeswarm.png](../figures/shap_summary_beeswarm.png)
 
 ---
 

@@ -10,16 +10,6 @@ Identify customers at high risk of leaving, understand the root causes driving d
 
 ---
 
-## 📜 Professional & Academic Transparency Disclaimer
-
-> [!IMPORTANT]
-> **Data & Simulation Disclaimer:**
-> *This project uses a high-fidelity simulated customer dataset and develops a synthetic business decision framework to demonstrate how predictive analytics, explainable AI (SHAP), and financial optimization support customer retention decisions in production environments.*
-> 
-> *The financial costs, offer acceptance rates, and lifetime value models represent realistic industry benchmarks designed for methodological rigor and decision framework evaluation.*
-
----
-
 ## 🎯 The Primary Business Question
 Before building algorithms or training models, this system poses the single critical question every subscription business must answer:
 
